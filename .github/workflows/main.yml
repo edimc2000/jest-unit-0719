@@ -1,5 +1,5 @@
 name: frontendTesting
-run-name: is testing her frontend
+run-name: unit testing
 on: [push]
 jobs:
   run-unit-tests:
