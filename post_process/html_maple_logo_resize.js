@@ -15,9 +15,13 @@ function logoResize() {
       }
 
       :where(.css-hro9nk).ant-switch {
-       display: none;
+        display: none;
       }
-
+        
+      :where(.css-hro9nk).ant-space {
+        gap: 24px;
+        display: none;
+      }
 
 
     </style>
