@@ -88,7 +88,7 @@ test('Task 8: categorize characters', () => {
   expected = [['' , '1234', ''], ['abc', '123', '$#%'], ['abc', '123', '$%%']]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    // console.log(`Index: ${index}, Value: ${value}`)
     expect(categorizeCharacters(value)).toStrictEqual(expected[index])
   }
 })
