@@ -1,4 +1,4 @@
-const replaceFirstLast = require ('../units/replaceFirstLast')
+const replaceFirstLast = require ('../units/units/replaceFirstLast')
 
 test ('[T2] Replace first and last', () =>{
     expect(replaceFirstLast('')).toBe('')

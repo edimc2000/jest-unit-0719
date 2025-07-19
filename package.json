@@ -1,13 +1,24 @@
 {
   "jest": {
+    "globalTeardown": "./hooks/global-teardown.js",
     "reporters": [
       "default",
-      [
-        "jest-html-reporters",
+      [ "jest-html-reporters",
         {
           "publicPath": "./html-report",
-          "filename": "report.html",
-          "openReport": true
+          "filename": "reportView1.html",
+          "openReport": true,
+          "darkThemefalse": false,
+          "logoImgPath": "./logo/mplqa.png", 
+          "pageTitle": "TEST REPORT", 
+          "hideIcon": true               
+        }
+      ],
+      [
+        "./node_modules/jest-html-reporter",
+        {
+          "pageTitle": "Test Report", 
+          "outputPath": "./html-report/reportView2.html"
         }
       ]
     ]
@@ -18,6 +29,7 @@
   },
   "devDependencies": {
     "jest": "^30.0.4",
+    "jest-html-reporter": "^4.3.0",
     "jest-html-reporters": "^3.1.7"
   }
 }

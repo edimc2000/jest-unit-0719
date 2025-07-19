@@ -1,0 +1,4 @@
+module.exports = {
+  // other options...
+  globalTeardown: './hooks/global-teardown.js',
+};
