@@ -1,8 +1,7 @@
 {
-
-
   "scripts": {
-    "test": "jest"
+    "test": "jest", 
+    "sum": "npx jest -- sum.test.js"
   },
 
   "devDependencies": {
