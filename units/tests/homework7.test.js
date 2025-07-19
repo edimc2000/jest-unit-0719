@@ -54,7 +54,6 @@ test('Task 5: return the middle integer', () => {
   expected = [2, 5, 5, 1, 10]
 
   for (const [index, value] of givens.entries()) {
-
     expect(middleInt(value[0], value[1], value[2])).toStrictEqual(expected[index])
   }
 })
@@ -66,7 +65,7 @@ test('Task 6: sum of digits', () => {
   expected = [0, 11, 8, 0]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    // console.log(`Index: ${index}, Value: ${value}`)
     expect(sumOfDigits(value)).toBe(expected[index])
   }
 })
@@ -77,7 +76,7 @@ test('Task 7: array factorial', () => {
   expected = [[1, 2, 6, 24], [1, 120], [120, 1, 720], []]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    // console.log(`Index: ${index}, Value: ${value}`)
     expect(arrFactorial(value)).toStrictEqual(expected[index])
   }
 })
