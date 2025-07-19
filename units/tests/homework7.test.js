@@ -2,7 +2,8 @@ const {
   hasUpperCase,
   noDigit,
   noVowel,
-  no13
+  no13,
+  middleInt
 } = require('../units/homework7');
 
 let givens = []
@@ -42,5 +43,15 @@ test('Task 4: no 13', () => {
 
   for (const [index, value] of givens.entries()) {
     expect(no13(value)).toStrictEqual(expected[index])
+  }
+})
+
+test('Task 5: return the middle integer', () => {
+  givens = [[1, 2, 2], [5, 5, 8], [5, 3, 5], [1, 1, 1], [-1, 25, 10]];
+  expected = [2, 5, 5, 1, 10]
+
+  for (const [index, value] of givens.entries()) {
+    console.log(`Index: ${index}, Value: ${value}`)
+    expect(middleInt(value[0], value[1], value[2])).toStrictEqual(expected[index])
   }
 })

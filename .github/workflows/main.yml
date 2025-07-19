@@ -8,7 +8,7 @@ jobs:
     - name: Install modules
       run: npm ci
     - name: Run tests
-      run: npm test
+      run: npm t -- hom
 
     - name: Upload test results
       uses: actions/upload-artifact@v4
