@@ -1,13 +1,11 @@
-name: frontendTesting
-run-name: unit testing
-on: [push]
+name: CI
+on: push
 jobs:
-  run-unit-tests:
+  build:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: '14'
-      - run: npm install
-      - run: npm test
+    - uses: actions/checkout@v2
+    - name: Install modules
+      run: npm ci
+    - name: Run tests
+      run: npm test
