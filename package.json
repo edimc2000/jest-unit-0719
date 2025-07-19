@@ -1,12 +1,23 @@
 {
+  "jest": {
+    "reporters": [
+      "default",
+      [
+        "jest-html-reporters",
+        {
+          "publicPath": "./html-report",
+          "filename": "report.html",
+          "openReport": true
+        }
+      ]
+    ]
+  },
   "scripts": {
-    "test": "jest", 
+    "test": "jest",
     "sum": "npx jest -- sum.test.js"
   },
-
   "devDependencies": {
-    "jest": "^30.0.4"
+    "jest": "^30.0.4",
+    "jest-html-reporters": "^3.1.7"
   }
-
-
 }
