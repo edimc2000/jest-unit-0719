@@ -1,5 +1,6 @@
-const logoResize = require('../post_process/html_maple_logo_resize')
+const prepReport = require("../post_process/prepReport");
+
 // global-teardown.js
 module.exports = async () => {
-    logoResize()
+    prepReport()
 };
