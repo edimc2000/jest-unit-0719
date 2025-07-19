@@ -3,21 +3,24 @@
     "globalTeardown": "./hooks/global-teardown.js",
     "reporters": [
       "default",
-      [ "jest-html-reporters",
+      [
+        "jest-html-reporters",
         {
           "publicPath": "./html-report",
           "filename": "reportView1.html",
           "openReport": true,
           "darkThemefalse": false,
-          "logoImgPath": "./logo/mplqa.png", 
-          "pageTitle": "TEST REPORT", 
-          "hideIcon": true               
+          "logoImgPath": "./logo/mplqa.png",
+          "pageTitle": "TEST REPORT",
+          "hideIcon": true,
+          "includeConsoleLog": true, 
+          "expand": true
         }
       ],
       [
         "./node_modules/jest-html-reporter",
         {
-          "pageTitle": "Test Report", 
+          "pageTitle": "Test Report",
           "outputPath": "./html-report/reportView2.html"
         }
       ]
