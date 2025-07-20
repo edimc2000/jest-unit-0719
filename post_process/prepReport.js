@@ -17,9 +17,9 @@ function prepReport() {
     <style>
         /* this is to resize logo container */
         :where(.css-hro9nk).ant-avatar-lg {
-          width: 170px;
+          width: 180px;
           height: auto;
-          line-height: 38px;
+      
           border-radius: 50%;
         }
     
