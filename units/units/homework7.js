@@ -17,7 +17,6 @@ const factorial  = num => {
 };
 const arrFactorial = arr => arr.map(num => factorial(num)); 
 
-
 // t8
 const categorizeCharacters = string => {
     return [

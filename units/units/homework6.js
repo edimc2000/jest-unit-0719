@@ -1,10 +1,10 @@
 // Task 1
 const noSpace = string => string.replace(/\s/g,"");
-//ron
+
 
 // Task 2
 const replaceFirstLast = str => str.trim().length < 2 ? "" : str.slice(-1) + str.slice(1, -1) + str[0];
-// jjj
+
 /* Task 3
 Requirement:
 Write a function named hasVowel() which takes a string argument and 
