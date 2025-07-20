@@ -1,4 +1,4 @@
 node_modules/*
 html-report/reportView1.html
 html-report/jest-html-reporters-attach/*
-html-report/*
+/html-report/*
