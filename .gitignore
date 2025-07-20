@@ -2,3 +2,5 @@ node_modules/*
 html-report/reportView1.html
 html-report/reportView2.html
 html-report/jest-html-reporters-attach/reportView1/result.js
+html-report/jest-html-reporters-attach/reportView1/result.js
+html-report/reportView2.html
