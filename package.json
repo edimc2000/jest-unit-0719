@@ -8,7 +8,7 @@
         {
           "publicPath": "./html-report",
           "filename": "reportView1.html",
-          "openReport": true,
+          "openReport": false,
           "darkThemefalse": false,
           "logoImgPath": "./logo/mplqa.png",
           "pageTitle": "TEST REPORT",
