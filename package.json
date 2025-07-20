@@ -17,13 +17,7 @@
           "expand": true
         }
       ],
-      [
-        "./node_modules/jest-html-reporter",
-        {
-          "pageTitle": "Test Report",
-          "outputPath": "./html-report/reportView2.html"
-        }
-      ]
+      
     ]
   },
   "scripts": {
