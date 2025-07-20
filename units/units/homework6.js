@@ -1,7 +1,6 @@
 // Task 1
 const noSpace = string => string.replace(/\s/g,"");
 
-
 // Task 2
 const replaceFirstLast = str => str.trim().length < 2 ? "" : str.slice(-1) + str.slice(1, -1) + str[0];
 
