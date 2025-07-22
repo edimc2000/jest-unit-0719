@@ -58,6 +58,18 @@ function prepReport() {
               element.style.minWidth = 'fit-content'; // Adjusts to text length
           });
              
+          //time box
+          const spanTimeBox = document.querySelectorAll('.time_box')
+            spanTimeBox.forEach((element) => {
+             
+              // Text styling
+              element.style.fontSize = '1.2em'; // Slightly reduced font size
+              element.style.fontFamily = 'Quicksand, sans-serif';
+              element.style.fontWeight = 'bold';
+              element.style.color = 'rgb(57, 62, 70)';
+           
+          });
+
 
 
         }
@@ -103,9 +115,17 @@ function prepReport() {
         /* test item */
         .inner_path_text {
           font-family: "Quicksand", sans-serif;
-          font-weight: 500;
+          font-weight: 700;
           font-size: 1em;   
         }
+
+        // filename header on the test report
+        .ant-typography css-hro9nk{
+          font-family: "Quicksand", sans-serif;
+          font-weight: 700;
+          font-size: 1.2em; 
+        }
+
 
         [style = "color: rgb(217, 54, 62);"] .detail_status_text{
           font-family: "Quicksand", sans-serif;
