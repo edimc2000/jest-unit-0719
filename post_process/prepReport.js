@@ -100,9 +100,11 @@ function prepReport() {
           margin-top: 0.4em
         }
 
+        /* test item */
         .inner_path_text {
-          font-family: "Ubuntu", sans-serif;
+          font-family: "Quicksand", sans-serif;
           font-weight: 500;
+          font-size: 1em;   
         }
 
         [style = "color: rgb(217, 54, 62);"] .detail_status_text{
