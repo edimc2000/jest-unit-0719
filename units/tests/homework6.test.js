@@ -8,7 +8,7 @@ let expected = []
 
 test('Task 1: no space', () => {
   givens = ['', 'Javascript', '   Hello   ', ' Hello       World   ', 'Maple Leaf']
-  expected = ['', 'Javascript', 'Hellox', 'HelloWorld', 'MapleLeaf']
+  expected = ['', 'Javascript', 'Hello', 'HelloWorld', 'MapleLeaf']
 
   for (const [index, value] of givens.entries()) {
     // console.log(`Index: ${index}, Value: ${value}`)
