@@ -67,12 +67,6 @@ function doubleOrTripleWord(str) {
         return str + str; //str.repeat(2)
 }
 
-console.log(doubleOrTripleWord("Tech"));
-console.log(doubleOrTripleWord("Apple"));
-console.log(doubleOrTripleWord(""));
-console.log(doubleOrTripleWord(" "));
-console.log(doubleOrTripleWord("1"));
-console.log(doubleOrTripleWord("22"));
 
 /*TASK 5: Write a function named as firstWord() which takes a string word as an argument and returns the first word from the given string when invoked.
 Examples:
