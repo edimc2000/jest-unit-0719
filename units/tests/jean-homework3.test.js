@@ -44,9 +44,9 @@ test(`task3: stringHasA`, () => {
   }
 })
 
-test(`task4: doubleOrTripleTheWord`, () => { //review this again
+test(`task4: doubleOrTripleTheWord`, () => {
   givens = ["Tech", "Apple", "", " ", "1", "22"]
-  expected = ["TechTechTech", "AppleApple", `""`, `""`, "11", "222222"]
+  expected = ["TechTechTech", "AppleApple", `""`, "  ", "11", "222222"]
 
   for (const [index, value] of givens.entries()) {
     console.log(`Index: ${index}, Value: ${value}`)
