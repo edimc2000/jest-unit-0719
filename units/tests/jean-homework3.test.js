@@ -5,7 +5,7 @@ const {
   doubleOrTripleWord,
   firstWord,
   lastWord,
-  firstlastWord,
+  firstLastWord,
   startVowel,
   swap4,
   swapFirstLastWord
@@ -20,7 +20,6 @@ test(`task1: averageOfThreeNumbers`, () => {
 
   for (const [index, value] of givens.entries()) {
     console.log(`Index: ${index}, Value: ${value}`)
-    // expect(randomNumAverageCalculation(givens[index][0], givens[index][1], givens[index][2]) >= 50).toBe(expected[index])
     expect(randomNumAverageCalculation(...value) >= 50).toBe(expected[index])
   }
 })
@@ -31,7 +30,6 @@ test(`task2: matchTheNumbers`, () => {
 
   for (const [index, value] of givens.entries()) {
     console.log(`Index: ${index}, Value: ${value}`)
-    // expect(randomNumAverageCalculation(givens[index][0], givens[index][1], givens[index][2]) >= 50).toBe(expected[index])
     expect(numbersMatching(...value)).toBe(expected[index])
   }
 })
@@ -76,13 +74,13 @@ test(`task6: returnTheLastWord`, () => {
   }
 })
 
-test(`task7: returnTheFirstAndLastWords`, () => {
+test.only(`task7: returnTheFirstAndLastWords`, () => {
   givens = ["Hello World", "I  like JavaScript", "Hello", "", " "]
   expected = ["HelloWorld", "IJavaScript", "HelloHello", `""`, `""`]
 
   for (const[index, value] of givens.entries()){
     console.log(`Index: ${index}, Value: ${value}`)
-    expect(firstlastWord(value)).toBe(expected[index])
+    expect(firstLastWord(value)).toBe(expected[index])
   }
 })
 
