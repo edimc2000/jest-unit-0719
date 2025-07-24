@@ -1,9 +1,10 @@
 //HOMEWORK 3: JS FUNCTION - IF ELSE STATEMENTS
 
-//TASK 1: Generate 3 random numbers between 1-100. Print true if average of the number is >= 50 else print false
+/*TASK 1: Generate 3 random numbers between 1-100. Print true if average of the number is >= 50 else print false
+Test data 1: 20, 70, 25             Test data 2: 65, 80, 90
+Expected Output 1: false            Expected Output 2: true*/
 
 function randomNumAverageCalculation(num1, num2, num3) {
-    //const averageOf3Numbers = (randomNum1 + randomNum2 + randomNum3) / 3;
     return (num1 + num2 + num3) / 3;
 }
 
@@ -11,23 +12,10 @@ function randomNumAverageCalculation(num1, num2, num3) {
 - if all numbers are different, then print "NO MATCH"
 - if any og those 2 numbers are equal, then print "DOUBLE MATCH"
 - if all 3 numbers are equal, then print "TRIPLE MATCH"*/
-//const num1 = Math.ceil(Math.random() * 3);
-//const num2 = Math.ceil(Math.random() * 3);
-//const num3 = Math.ceil(Math.random() * 3);
-
-/*console.log(match1, match2, match3) //display all generated numbers
-if (match1 == match2 && match1 == match3 && match2 == match3) {
-    return `TRIPLE MATCH`;
-} else if (match1 == match2 || match1 == match3 || match2 == match3) {
-    return `DOUBLE MATCH`;
-} else {
-    return `NO MATCH`;
-}*/
-//console.log(num1, num2, num3);
 
 function numbersMatching(num1, num2, num3) {
 
-    if (num1 === num2 && num1 === num3 && num2 === num3) {
+    if (num1 === num2 && num1 === num3) {
         return `TRIPLE MATCH`;
     } else if (num1 === num2 || num1 === num3 || num2 === num3) {
         return `DOUBLE MATCH`;
@@ -44,7 +32,7 @@ hasA("")
 hasA("Apple")*/
 
 function hasA(str) {
-    return str.toLowerCase().split("").includes("a");
+    return str.toLowerCase().includes("a");
 }
 
 
@@ -58,13 +46,12 @@ doubleOrTripleWord("1") -> "11"
 doubleOrTripleWord("22") -> "222222"*/
 
 function doubleOrTripleWord(str) {
-    const removeSpace = str.trim();
-    if (removeSpace.length === 0) {
+    if (str.length === 0) {
         return `""`;
-    }else if (removeSpace.length % 2 === 0) {
-        return str + str + str; //str.repeat(3)
+    } else if (str.length % 2 === 0) {
+        return str.repeat(3);
     } else
-        return str + str; //str.repeat(2)
+        return str.repeat(2);
 }
 
 
@@ -79,6 +66,7 @@ hasA("")*/
 
 function firstWord(str) {
     const givenTrim = str.trim();
+
     if (givenTrim.length === 0) {
         return `""`;
     }
@@ -98,6 +86,7 @@ lastWord("  ") -> ""*/
 
 function lastWord(str) {
     const trimTheString = str.trim();
+
     if (trimTheString.length === 0) {
         return `""`;
     }
@@ -106,16 +95,15 @@ function lastWord(str) {
     return count[count.length - 1];
 }
 
-/*Task 7: Write a function named as firstlastWord() which takes a string word as an argument and returns the first and last words from the given string when invoked.
+/*Task 7: Write a function named as firstLastWord() which takes a string word as an argument and returns the first and last words from the given string when invoked.
 NOTE: Return empty string if the given string does not have any word
-Examples:
-lastWord("Hello World")  -> "World"
-lastWord("I like JavaScript") -> "JavaScript"
-lastWord("Hello") -> "Hello"
-lastWord("") -> ""
-lastWord("  ") -> ""*/
+firstLastWord("Hello World") -> "HelloWorld"
+firstLastWord("I like JavaScript") -> "IJavaScript"
+firstLastWord("Hello") -> "HelloHello"
+firstLastWord("") -> ""
+firstLastWord(" ") -> ""*/
 
-function firstlastWord(str) {
+function firstLastWord(str) {
     const trimmingTheWords = str.trim()
 
     if (trimmingTheWords.length === 0) {
@@ -185,7 +173,7 @@ function swapFirstLastWord(str) {
     const firstWord = phrase[0];
     const lastWord = phrase[phrase.length - 1];
 
-    if (phrase.length < 2) return `""`
+    if (phrase.length < 2) return `""`;
 
     phrase[0] = lastWord;
     phrase[phrase.length - 1] = firstWord;
@@ -204,7 +192,7 @@ module.exports = {
     doubleOrTripleWord,
     firstWord,
     lastWord,
-    firstlastWord,
+    firstLastWord,
     startVowel,
     swap4,
     swapFirstLastWord
