@@ -14,7 +14,9 @@ jobs:
 - job: build
   pool:
     vmImage: 'ubuntu-latest'
-  
+  strategy:
+    maxParallel: 1  # This ensures no parallel execution
+
   steps:
   - checkout: self
   
