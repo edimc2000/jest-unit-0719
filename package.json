@@ -13,7 +13,7 @@
           "logoImgPath": "./logo/mplqa.png",
           "pageTitle": "TEST REPORT",
           "hideIcon": true,
-          "includeConsoleLog": true, 
+          "includeConsoleLog": false, 
           "expand": true
         }
       ]

@@ -1,0 +1,39 @@
+name: CI
+
+trigger:
+  branches:
+    include:
+      - master
+
+pr:
+  branches:
+    include:
+      - master
+
+jobs:
+- job: build
+  pool:
+    vmImage: 'ubuntu-latest'
+  strategy:
+    maxParallel: 1  # This ensures no parallel execution
+
+  steps:
+  - checkout: self
+  
+  - task: Npm@1
+    displayName: 'Install modules'
+    inputs:
+      command: 'ci'
+  
+  - task: Npm@1
+    displayName: 'Run tests'
+    inputs:
+      command: 'custom'
+      customCommand: 't'
+  
+  - task: PublishBuildArtifacts@1
+    displayName: 'Upload test results'
+    condition: always()
+    inputs:
+      PathtoPublish: 'html-report'
+      ArtifactName: 'test-results'
