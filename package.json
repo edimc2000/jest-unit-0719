@@ -13,19 +13,19 @@
           "logoImgPath": "./logo/mplqa.png",
           "pageTitle": "TEST REPORT",
           "hideIcon": true,
-          "includeConsoleLog": false, 
+          "includeConsoleLog": false,
           "expand": true
         }
       ]
-      
     ]
   },
   "scripts": {
-    "test":"npx jest -- hom",
+    "test": "npx jest -- hom",
     "sum": "npx jest -- sum.test.js"
   },
   "devDependencies": {
     "jest": "^30.0.4",
+    "jest-html-reporter": "^4.3.0",
     "jest-html-reporters": "^3.1.7"
   }
 }
