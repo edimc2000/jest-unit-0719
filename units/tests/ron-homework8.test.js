@@ -75,7 +75,7 @@ test('Task 8 get commons', () => {
 
 
 //test 9
- e0b38bd5292e47323af9279114ef35857db02536test('Task 9 no x in variables', () => {
+test('Task 9 no x in variables', () => {
   givens = [["abc", 123, "#$%"], ["xyz", 123, "#$%"], ["x", 123, "#$%"], ["xyXyxy", "Xx", "ABC"]];
   expected = [["abc", 123, "#$%"], ["yz", 123, "#$%"], [123, "#$%"], ["yyy", "ABC"]];
 
