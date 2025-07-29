@@ -19,7 +19,7 @@ test(`task1: averageOfThreeNumbers`, () => {
   expected = [true, false]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(randomNumAverageCalculation(...value) >= 50).toBe(expected[index])
   }
 })
@@ -29,7 +29,7 @@ test(`task2: matchTheNumbers`, () => {
   expected = [`TRIPLE MATCH`, `NO MATCH`, `DOUBLE MATCH`, `DOUBLE MATCH`]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(numbersMatching(...value)).toBe(expected[index])
   }
 })
@@ -39,7 +39,7 @@ test(`task3: stringHasA`, () => {
   expected = [false, true, false, true]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(hasA(value)).toBe(expected[index])
   }
 })
@@ -49,7 +49,7 @@ test(`task4: doubleOrTripleTheWord`, () => {
   expected = ["TechTechTech", "AppleApple", `""`, "  ", "11", "222222"]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(doubleOrTripleWord(value)).toBe(expected[index])
   }
 })
@@ -59,7 +59,7 @@ test(`task5: returnTheFirstWord`, () => {
   expected = ["Hello", "I", "Hello", `""`, `""`]
 
   for (const [index, value] of givens.entries()) {
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(firstWord(value)).toBe(expected[index])
   }
 })
@@ -69,7 +69,7 @@ test(`task6: returnTheLastWord`, () => {
   expected = ["World", "JavaScript", "Hello", `""`, `""`]
 
   for (const[index, value] of givens.entries()){
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(lastWord(value)).toBe(expected[index])
   }
 })
@@ -79,7 +79,7 @@ test(`task7: returnTheFirstAndLastWords`, () => {
   expected = ["HelloWorld", "IJavaScript", "HelloHello", `""`, `""`]
 
   for (const[index, value] of givens.entries()){
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(firstLastWord(value)).toBe(expected[index])
   }
 })
@@ -89,7 +89,7 @@ test(`task8: stringStartsWithVowel`, () => {
   expected = [false, true, true, false, false, false]
 
   for (const[index, value] of givens.entries()){
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(startVowel(value)).toBe(expected[index])
   }
 })
@@ -99,7 +99,7 @@ test(`task9: swapTheFirstAndLast4Characters`, () => {
   expected = [`""`, "riptScJava", "obalGlTech", `""`, `""`, `""`]
 
   for (const[index, value] of givens.entries()){
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(swap4(value)).toBe(expected[index])
   }
 })
@@ -109,7 +109,7 @@ test(`task10: swapTheFirstAndLastWord`, () => {
   expected = ["World Hello", "JavaScript like I", "bar bar foo foo", `""`, `""`, `""`]
  
   for (const[index, value] of givens.entries()){
-    console.log(`Index: ${index}, Value: ${value}`)
+    //console.log(`Index: ${index}, Value: ${value}`)
     expect(swapFirstLastWord(value)).toBe(expected[index])
   }
 })
