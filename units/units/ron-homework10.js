@@ -70,19 +70,7 @@ const reverseNumber = (num) => {
 // Task 6
 const doubleOrTriple = (arr, bool) => arr.map(num => num * (bool ? 2 : 3));
 
-
-
-/* Task 7
-Requirement:
- Write a function named splitString() which takes a string and a number arguments and returns the string back split by the given number. 
- Note: Return empty string if the string shorter than splitting number or the string length is not divisible by the given number.
-Examples:
- splitString("JavaScript", 5)  -> "JavaS cript"
- splitString("Java", 2)        -> "Ja va"
- splitString("Automation", 3)  -> ""
- splitString("Hello", 6)       -> ""
- splitString("12", 1)          -> "1 2"
-*/
+// Task 7
 const splitString = (str, num) => {
     if (str.length < num || str.length % num !== 0) return "";
 
