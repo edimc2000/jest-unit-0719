@@ -534,8 +534,8 @@ fizzBuzz(9, 6)	-> "Fizz | 7 | 8 | Fizz"
 console.log('\n--- TASK 20 ---');
 function fizzBuzz(num1, num2) {
   const result = [];
-  const start = Math.min(num1, num2); // Determine the smaller number for the start of the range
-  const end = Math.max(num1, num2);   // Determine the larger number for the end of the range
+  const start = Math.min(num1, num2);
+  const end = Math.max(num1, num2);
 
   for (let i = start; i <= end; i++) {
     let output = "";
@@ -558,14 +558,3 @@ console.log(fizzBuzz(13, 18));
 console.log(fizzBuzz(12, 5));
 console.log(fizzBuzz(5, 5));
 console.log(fizzBuzz(9, 6));
-
-
-
-
-
-
-
-
-/*module.exports = {
-
-}*/
